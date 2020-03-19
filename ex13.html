@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="resources/css/reset.css"></link>
+	<style type="text/css">
+		/*기본 CSS 및 모바일*/
+		#wrap{ display: flex; flex-flow:column; margin: 0 auto;
+			background-color: green; width: 80%; max-width: 1200px; }
+			/*인포메이션 영역 css*/
+		.info_section{width:100%; background-color:steelblue;}
+		.info_list{display: flex;}
+		.info_list li{width:25%; text-align:center;}
+		.info_list li a{display:block; padding:15px 0;}
+		/*PC 용 CSS */
+		@media all and (min-width:960px){
+		#wrap{ position: relative; background-color: pink; width:80%; }
+			/*인포메이션 영역 css*/
+		.info_section{ position: absolute; top:30px;
+			right: 30px; z-index:1; width:180px;}
+		.info_list li a{display: block; padding: 15px 15px;}
+		}
+	</style>
+</head>
+<body>
+<!-- 모바일용 : 320px, 테블릿용 : 768px, pc : 960 또는 1024px -->
+   <div id="wrap">
+    <section class="info_section">
+	 <ul class="info_list">
+      <li><a href=""><img src="resources/images/info_icon_01.png"></a></li>
+      <li><a href=""><img src="resources/images/info_icon_02.png"></a></li>
+      <li><a href=""><img src="resources/images/info_icon_03.png"></a></li>
+      <li><a href=""><img src="resources/images/info_icon_04.png"></a></li>
+	 </ul>
+    </section>
+   </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
